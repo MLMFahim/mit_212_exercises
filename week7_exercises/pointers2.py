@@ -16,7 +16,6 @@ while offset < len(scores):
     offset += 1
 
 print(f"Maximum value: {max_val}")
-
 print("\n--- 4. Reverse Traversal ---")
 offset = len(scores) - 1
 
@@ -24,15 +23,10 @@ while offset >= 0:
     print(scores[offset])
     offset -= 1
 
-
 print("\n--- 5. Bonus: Pointer/Reference Behavior ---")
-
 ptr = scores 
-
 print(f"Original scores[2]: {scores[2]}")
-
 ptr[2] = 100
-
 print(f"Modified ptr[2]: {ptr[2]}")
 print(f"Does scores[2] change? {scores[2]}")  
 print(f"id(ptr) == id(scores): {id(ptr) == id(scores)}") 
